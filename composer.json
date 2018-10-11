@@ -1,0 +1,22 @@
+{
+    "name": "silvablack/wp_full_gallery",
+    "description": "Wordpress plugin to show gallery images and videos",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paulo Silva",
+            "email": "paulosilvadev3@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FGallery\\": "/",
+            "FGallery\\Config\\": "/config",
+            "FGallery\\Core\\": "/core"
+        }
+    }
+}
