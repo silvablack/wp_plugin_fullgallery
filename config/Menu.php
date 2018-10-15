@@ -31,7 +31,7 @@ class Menu{
             'Iapy Gallery',
             'manage_options',
             'iapy_gallery',
-            array($this->menu, 'render'),
+            array($this->menu, 'show'),
             'dashicons-images-alt',
             6
         );

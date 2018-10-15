@@ -2,14 +2,18 @@
 
 class View{
 
-    private $path;
-    private $data;
+    /**
+     * Renderizing views file and send data
+     * @param $name
+     * Name is the name of view file
+     * @param $data
+     * Data is the responsity variable for receive data and send to view file
+     */
 
-    public function View($name, $data=[]){
+    public static function render($name, $data = array()){
         ob_start();
-        $this->name = $name;
-        $this->data = $data;
-        require_once(dirname(__DIR__).'../views/'.$name.'.php');
+        extract($data);
+        require_once(dirname(__DIR__).'/views/'.$name.'.php');
         $output = ob_get_clean();
         return $output;
     }

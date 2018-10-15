@@ -1,0 +1,1 @@
+Olá Gallery! <?php echo $var ?>

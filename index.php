@@ -27,7 +27,11 @@ add_action('plugins_loaded', 'run');
 
 // Instance class and init aplication
 function run(){
+    
+    // register and configure admin menu
     $plugin = new Menu(new AdminPage());
+
+    // register hook to show gallery
     $hook = new GalleryHandler();
 }
 
