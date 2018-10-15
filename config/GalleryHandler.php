@@ -1,6 +1,5 @@
 <?php
 
-namespace FGallery\Config;
 
 class GalleryHandler{
 

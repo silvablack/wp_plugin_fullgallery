@@ -1,7 +1,5 @@
 <?php
 
-namespace FGallery\Config;
-
 /**
  * @description Create menu admin view and render for plugin
  */

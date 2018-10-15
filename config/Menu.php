@@ -1,7 +1,5 @@
 <?php
 
-namespace FGallery\Config;
-
 /**
  * Menu Class instance and render menu configuration
  */

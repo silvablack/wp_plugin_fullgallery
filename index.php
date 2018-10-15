@@ -1,9 +1,9 @@
 <?php
 require_once __DIR__."/vendor/autoload.php";
 
-use FGallery\Config\Menu;
-use FGallery\Config\AdminPage;
-use FGallery\Config\GalleryHandler;
+require_once __DIR__."/config/Menu.php";
+require_once __DIR__."/config/AdminPage.php";
+require_once __DIR__."/config/GalleryHandler.php";
 
 defined ( 'ABSPATH' ) or die ( 'No script kiddies please' );
 
@@ -28,7 +28,6 @@ add_action('plugins_loaded', 'run');
 // Instance class and init aplication
 function run(){
     $plugin = new Menu(new AdminPage());
-    $plugin->init();
     $hook = new GalleryHandler();
 }
 

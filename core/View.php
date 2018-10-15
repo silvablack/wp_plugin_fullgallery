@@ -1,7 +1,5 @@
 <?php
 
-namespace FGallery\Core;
-
 class View{
 
     private $path;
