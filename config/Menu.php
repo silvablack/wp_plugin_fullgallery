@@ -1,4 +1,10 @@
 <?php
+defined ( 'ABSPATH' ) or die ( 'No script kiddies please' );
+
+// Not permission to directly access 
+if(!defined('WPINC')){
+     die;
+}
 
 /**
  * Menu Class instance and render menu configuration

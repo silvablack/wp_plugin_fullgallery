@@ -5,8 +5,6 @@ require_once __DIR__."/config/Menu.php";
 require_once __DIR__."/config/AdminPage.php";
 require_once __DIR__."/config/GalleryHandler.php";
 
-defined ( 'ABSPATH' ) or die ( 'No script kiddies please' );
-
 /**
  * Plugin Name: Iapy Gallery
  * Description: Gallery to Images and Videos
@@ -16,6 +14,8 @@ defined ( 'ABSPATH' ) or die ( 'No script kiddies please' );
  * License: GPL2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
+
+defined ( 'ABSPATH' ) or die ( 'No script kiddies please' );
 
 // Not permission to directly access 
 if(!defined('WPINC')){
@@ -27,7 +27,7 @@ add_action('plugins_loaded', 'run');
 
 // Instance class and init aplication
 function run(){
-    
+
     // register and configure admin menu
     $plugin = new Menu(new AdminPage());
 
