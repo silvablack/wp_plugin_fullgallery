@@ -22,18 +22,14 @@ if(!defined('WPINC')){
      die;
 }
 
-// Set action ´fg_plugin_settings´ to plugin loaded
-add_action('plugins_loaded', 'run');
+// Set action function to plugin loaded
+add_action('plugins_loaded', function(){ # Instance class and init aplication
+ // register and configure admin menu
+ $plugin = new Menu(new AdminPage());
 
-// Instance class and init aplication
-function run(){
-
-    // register and configure admin menu
-    $plugin = new Menu(new AdminPage());
-
-    // register hook to show gallery
-    $hook = new GalleryHandler();
-}
+ // register hook to show gallery
+ $hook = new GalleryHandler();
+});
 
 
 ?>

@@ -7,7 +7,8 @@ if(!defined('WPINC')){
 }
 
 /**
- * Menu Class instance and render menu configuration
+ * @since 1.0.0
+ * @description Menu Class instance and render menu configuration
  */
 class Menu{
     /**
@@ -18,9 +19,8 @@ class Menu{
 
 
     /**
-     * @param menu
-     * Add menu in admin page
-     * using wordpress handler add_action
+     * @since 1.0.0
+     * @param menu Add menu in admin page using wordpress handler add_action
      */
     public function Menu($menu){
         $this->menu = $menu;
@@ -28,6 +28,7 @@ class Menu{
     }
 
     /**
+     * @since 1.0.0
      * Set config in menu page
      * using wordpress add_menu_page
      */

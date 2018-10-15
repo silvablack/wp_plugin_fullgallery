@@ -9,11 +9,10 @@ if(!defined('WPINC')){
 class View{
 
     /**
-     * Renderizing views file and send data
-     * @param $name
-     * Name is the name of view file
-     * @param $data
-     * Data is the responsity variable for receive data and send to view file
+     * @since 1.0.0
+     * @description Renderizing views file and send data
+     * @param $name Name is the name of view file
+     * @param $data Data is the responsity variable for receive data and send to view file
      */
 
     public static function render($name, $data = array()){

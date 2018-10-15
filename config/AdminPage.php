@@ -9,12 +9,13 @@ if(!defined('WPINC')){
 require_once __DIR__."/../core/View.php";
 
 /**
+ * @since 1.0.0
  * @description Create menu admin view and render for plugin
  */
-
  class AdminPage{
      /**
-      * This function renders contents to page admin
+      * @since 1.0.0
+      * @description This function renders contents to page admin
       */
       public function show(){
           echo View::render('admin');
