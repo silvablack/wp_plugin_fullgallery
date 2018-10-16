@@ -6,6 +6,10 @@ if(!defined('WPINC')){
      die;
 }
 
+/**
+ * @since 1.0.0
+ * @description Class to core application, serves to render a preview page 
+ */
 class View{
 
     /**
