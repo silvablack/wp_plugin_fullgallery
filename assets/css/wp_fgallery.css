@@ -1,0 +1,18 @@
+div.iapy_preview{
+    width:100%;
+    position:relative;
+}
+.iapy_preview img, video{
+    width: 15%;
+    height: auto;
+    margin:2px;
+    box-shadow: 1px 1px 1px #000000;
+}
+
+img#iapy_delete{
+    position: relative;
+    right:12px;
+    width:18px;
+    height: 18px;
+    cursor: pointer;
+}
