@@ -1,0 +1,22 @@
+{
+  "name": "wp_full_gallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silvablack/wp_plugin_fullgallery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silvablack/wp_plugin_fullgallery/issues"
+  },
+  "homepage": "https://github.com/silvablack/wp_plugin_fullgallery#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
