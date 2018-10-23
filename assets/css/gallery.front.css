@@ -1,0 +1,16 @@
+#gallery-front{
+    width:100%;
+
+}
+
+#gallery-front img{
+    width:33%;
+}
+
+.video_hidden{
+    display: none;
+}
+
+.video_container video{
+width:33%;
+}
