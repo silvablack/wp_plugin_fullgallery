@@ -1,18 +1,59 @@
-div.iapy_preview{
+div.iapy_stored, div.iapy_preview{
     width:100%;
     position:relative;
+    height: 100px;
 }
-.iapy_preview img, video{
-    width: 15%;
+
+.iapy_stored img, video, .iapy_preview img, video{
+    width: 100%;
     height: auto;
-    margin:2px;
     box-shadow: 1px 1px 1px #000000;
 }
 
-img#iapy_delete{
+.media_container{
+    width:15%;
+    float:left;
+    margin:2px;
+    height: 220px;
+}
+
+img.iapy_delete, img.iapy_delete_stored{
     position: relative;
-    right:12px;
+    bottom:25px;
     width:18px;
     height: 18px;
+    cursor: pointer;
+}
+
+#spinner{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display:none;
+    background: url('../images/loading.gif') 50% 50% no-repeat rgba(0, 0,0, 0.5);
+}
+
+input.description, input.description_stored{
+    width:100%;
+    position: relative;
+    top:-20px;
+}
+
+.clear{
+    clear: both;
+}
+
+#send_images{
+    width:100px;
+    text-transform: uppercase;
+    margin:20px auto;
+    color:white;
+    background-color: dodgerblue;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #CCC;
     cursor: pointer;
 }
